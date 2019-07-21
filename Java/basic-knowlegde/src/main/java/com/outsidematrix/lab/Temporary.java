@@ -24,9 +24,6 @@ public class Temporary {
         l.clear();
         System.out.println(String.join(";", l));
 
-        for(String s: l){
-            s
-        }
 
 
     }
