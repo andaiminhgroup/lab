@@ -1,11 +1,11 @@
 package com.imooc.threading;
 
-class SolderWindowA extends Thread{
+class TicketWindowThread extends Thread{
     private int ticketsCount = 5;
 
     private String name;
 
-    public SolderWindowA(String name){
+    public TicketWindowThread(String name){
         this.name = name;
     }
 
@@ -20,12 +20,12 @@ class SolderWindowA extends Thread{
 }
 
 
-public class Main {
+public class TicketWindowExtendsThread {
 
     public static void main(String[] args){
-        SolderWindowA a1 = new SolderWindowA("A1");
-        SolderWindowA a2 = new SolderWindowA("A2");
-        SolderWindowA a3 = new SolderWindowA("A3");
+        TicketWindowThread a1 = new TicketWindowThread("A1");
+        TicketWindowThread a2 = new TicketWindowThread("A2");
+        TicketWindowThread a3 = new TicketWindowThread("A3");
 
         a1.start();
         a2.start();
